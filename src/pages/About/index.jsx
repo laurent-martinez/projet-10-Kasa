@@ -1,19 +1,17 @@
 import Banner from '../../components/Banner'
 import Header from '../../components/Header'
-import Cards from '../../components/Cards'
 import Footer from '../../components/Footer'
 
-const Home = () => {
+const About = () => {
    return (
       <>
          <div className="container">
             <Header />
-            <Banner src="/img/banner1.png" />
-            <Cards />
+            <Banner src="/img/banner2.png" />
          </div>
          <Footer />
       </>
    )
 }
 
-export default Home
+export default About

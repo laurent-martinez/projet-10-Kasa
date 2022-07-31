@@ -1,0 +1,26 @@
+.accomodations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.card {
+    width: 340px;
+    height: 340px;
+    background-color: #E6585F;
+    border-radius: 10px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    &_title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.67px;
+    color: #FFFFFF;
+    }
+}

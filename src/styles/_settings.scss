@@ -1,10 +1,9 @@
-body {
-    max-width: 1240px;
-    font-family: 'Montserrat', sans-serif;
-}
 @font-face {
     font-family: 'Montserrat', sans-serif;
     src: url("../assets/fonts/Montserrat-Medium.ttf");
+}
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 li {
     list-style-type: none;
