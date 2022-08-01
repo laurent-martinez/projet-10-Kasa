@@ -1,0 +1,11 @@
+.carrousel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 415px;
+
+    &_img {
+        width: 100%;
+    }
+}

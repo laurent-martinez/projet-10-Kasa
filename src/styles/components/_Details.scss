@@ -1,0 +1,21 @@
+.details_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.details {
+width: 582px;
+height: 62px;
+background-color: #FF6060;
+color: white;
+border: none;
+border-radius: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: 500;
+font-size: 18px;
+line-height: 25.67px;
+padding: 0 10px;
+}
