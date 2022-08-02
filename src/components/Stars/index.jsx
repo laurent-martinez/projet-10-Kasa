@@ -39,7 +39,11 @@ const Stars = ({ data }) => {
    return (
       <div className="Stars">
          {getStars(value).map((value) => (
-            <img src={getStar(value)} alt="full heart" />
+            <img
+               src={getStar(value)}
+               alt="full heart"
+               key={Math.random().toString(36).substring(2, 15)}
+            />
          ))}
       </div>
    )

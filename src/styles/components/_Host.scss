@@ -1,10 +1,23 @@
 .host {
     display: flex;
+    align-items: center;
     &_name {
+        display: flex;
+        flex-direction: column;
         font-weight: 500;
         font-size: 18px;
         line-height: 25.67px;
         color: #FF6060;
+        margin: 0 10px 0 0;
+
+        &_familyName{
+            margin: 0;
+            padding: 0;
+        }
+        &_firstName{
+            margin: 0;
+            padding: 0;
+        }
     }
     &_img {
         border-radius: 50%;
