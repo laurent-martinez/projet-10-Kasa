@@ -1,0 +1,22 @@
+.pageNotFound {
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin-top: 300px;
+    &_title {
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 410.69px;
+        color: #FF6060;
+        margin: 0;
+    }
+    &_subtitle {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51.34px;
+        color: #FF6060;
+        margin: 0;
+
+    }
+}

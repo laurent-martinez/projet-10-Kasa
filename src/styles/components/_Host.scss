@@ -1,0 +1,12 @@
+.host {
+    display: flex;
+    &_name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25.67px;
+        color: #FF6060;
+    }
+    &_img {
+        border-radius: 50%;
+    }
+}
