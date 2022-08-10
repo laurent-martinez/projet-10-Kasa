@@ -1,0 +1,44 @@
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+
+.details {
+width: 80%;
+height: 47px;
+background-color: #FF6060;
+color: white;
+border: none;
+border-radius: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: 500;
+font-size: 18px;
+line-height: 25.67px;
+padding: 0 10px;
+cursor: pointer;
+margin-bottom: -10px;
+}
+.content {
+    width: 80%;
+    color: #FF6060;
+    background-color: #F6F6F6;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.67px;
+    padding: 0px;
+
+    
+}
+.collapse-content {
+    width: 70%;
+    padding-left: 15px;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+

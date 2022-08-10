@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import './Stars.scss'
 
 const getStar = (value) => {
    switch (value) {
@@ -28,22 +28,13 @@ const getStars = (value) => {
          return console.log('error no rates')
    }
 }
-const Stars = ({ data }) => {
-   const idAcc = useParams()
-
-   let accomodation = {}
-   data.map((dt) => (dt.id === idAcc.id ? (accomodation = dt) : undefined))
-   console.log(typeof parseInt(accomodation.rating))
+const Stars = ({ accomodation }) => {
    let value = parseInt(accomodation.rating)
 
    return (
       <div className="Stars">
-         {getStars(value).map((value) => (
-            <img
-               src={getStar(value)}
-               alt="full heart"
-               key={Math.random().toString(36).substring(2, 15)}
-            />
+         {getStars(value).map((value, index) => (
+            <img src={getStar(value)} alt="full heart" key={index} />
          ))}
       </div>
    )

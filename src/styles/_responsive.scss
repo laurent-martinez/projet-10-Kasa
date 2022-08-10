@@ -1,0 +1,55 @@
+@media only screen and (max-width: 768px) {
+    .container{
+        margin: 50px 20px;
+    }
+    .accomodations {
+        background-color: #ffff;
+    }
+    .card {
+        width: 100%;
+    }
+    .accomodation_info {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .tagsNrate {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: unset;
+    }
+    .tag {
+        width: 84px;
+        height: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .container{
+        margin: 50px 5px;
+    }
+    .main_logo {
+        width: 145px;
+        height: 47px;
+    }
+    .navigation {
+        &_link{
+            font-size: 18px;
+            line-height: 17.11px;
+            white-space:noWrap;
+        }
+    }
+    .banner{
+        &_title {
+            font-size: 24px;
+            line-height: 24px;
+            padding-top: 25px;
+        }
+    }
+    .details {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+}

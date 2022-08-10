@@ -1,10 +1,9 @@
 import { useParams } from 'react-router-dom'
-
-const TitleNlocation = ({ data }) => {
+import './TitleNlocation.scss'
+import accomodations from '../../data/accomodations.json'
+const TitleNlocation = () => {
    const idAcc = useParams()
-
-   let accomodation = {}
-   data.map((dt) => (dt.id === idAcc.id ? (accomodation = dt) : undefined))
+   let accomodation = accomodations.find((el) => el.id === idAcc.id)
 
    return (
       <div>

@@ -1,4 +1,5 @@
-const Banner = ({ src }) => {
+import './Banner.scss'
+const Banner = ({ src, children }) => {
    return (
       <div className="banner">
          <img
@@ -6,7 +7,7 @@ const Banner = ({ src }) => {
             alt="Banner landscape of cliff by the sea"
             className="banner_img"
          />
-         <h1 className="banner_title">Chez vous, partout et ailleurs</h1>
+         {children}
       </div>
    )
 }

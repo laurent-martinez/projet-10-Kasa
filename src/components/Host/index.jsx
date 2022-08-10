@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom'
+import accomodations from '../../data/accomodations.json'
+import './Host.scss'
 
-const Host = ({ data }) => {
+const Host = () => {
    const idAcc = useParams()
-
-   let accomodation = {}
-   data.map((dt) => (dt.id === idAcc.id ? (accomodation = dt) : undefined))
+   let accomodation = accomodations?.find((el) => el.id === idAcc.id)
    let name = accomodation.host.name.split(' ')
    let firstName = name[0]
    let familyname = name[1]

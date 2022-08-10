@@ -1,18 +1,14 @@
 import { useParams } from 'react-router-dom'
+import './Tags.scss'
+import accomodations from '../../data/accomodations.json'
 
-const Tags = ({ data }) => {
+const Tags = () => {
    const idAcc = useParams()
-
-   let accomodation = {}
-   data.map((dt) => (dt.id === idAcc.id ? (accomodation = dt) : undefined))
-   console.log(data)
+   let accomodation = accomodations.find((el) => el.id === idAcc.id)
    return (
       <div className="tags">
-         {accomodation.tags.map((tag) => (
-            <p
-               className="tag"
-               key={Math.random().toString(36).substring(2, 15)}
-            >
+         {accomodation.tags.map((tag, index) => (
+            <p className="tag" key={index}>
                {tag}
             </p>
          ))}

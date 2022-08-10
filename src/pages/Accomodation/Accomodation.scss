@@ -1,0 +1,17 @@
+.accomodation_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tagsNrate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.titlesNhost {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+
+}

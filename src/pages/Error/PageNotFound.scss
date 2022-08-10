@@ -1,6 +1,5 @@
 .pageNotFound {
     position: absolute;
-    top: 50%;  
     left: 50%; 
     transform: translate(-50%, -50%); 
     margin-top: 300px;
@@ -10,6 +9,7 @@
         line-height: 410.69px;
         color: #FF6060;
         margin: 0;
+        text-align: center;
     }
     &_subtitle {
         font-size: 36px;
@@ -17,6 +17,16 @@
         line-height: 51.34px;
         color: #FF6060;
         margin: 0;
+        text-align: center;
 
+    }
+    &_link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25.67px;
+        text-align: center;
+        &_a {
+            color: #FF6060;
+        }
     }
 }

@@ -1,5 +1,6 @@
 import Logo from '../Logo'
 import Navigation from '../Navigation'
+import './Header.scss'
 
 const Header = () => {
    return (

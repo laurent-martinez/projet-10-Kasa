@@ -1,9 +1,11 @@
+import './Logo.scss'
 const Logo = () => {
    return (
       <div className="logo">
          <svg
             width="211"
             height="68"
+            className="main_logo"
             viewBox="0 0 211 68"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
