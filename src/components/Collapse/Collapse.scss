@@ -1,3 +1,9 @@
+.details_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 .details-container {
     display: flex;
     flex-direction: column;
@@ -21,7 +27,6 @@ font-size: 18px;
 line-height: 25.67px;
 padding: 0 10px;
 cursor: pointer;
-margin-bottom: -10px;
 }
 .content {
     width: 80%;
@@ -38,7 +43,11 @@ margin-bottom: -10px;
     width: 70%;
     padding-left: 15px;
 }
-.rotate {
-    transform: rotate(180deg);
-}
 
+
+.collapse-small {
+    width: 582px;
+}
+.content-small {
+    width: 582px;
+}

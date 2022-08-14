@@ -1,11 +1,11 @@
 // import { useEffect, useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Accomodation from './pages/Accomodation'
 import Error from './pages/Error'
 
-const App = () => {
+const ReactRouter = () => {
    // const [data, setData] = useState([])
 
    // useEffect(() => {
@@ -23,13 +23,14 @@ const App = () => {
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="*" element={<Error />} />
             <Route path="accomodation">
                <Route path=":id" element={<Accomodation />} />
             </Route>
+            <Route path="/error" element={<Error />} />
+            <Route path="*" element={<Navigate to="/error" replace />} />
          </Routes>
       </BrowserRouter>
    )
 }
 
-export default App
+export default ReactRouter

@@ -1,31 +1,31 @@
 // import { useEffect, useState } from 'react'
-import ArrayOfAccomodation from '../../data/accomodations.json'
-import { useParams } from 'react-router-dom'
 
-// const useFetch = (data) => {
-//    const [data, setData] = useState(null)
+// const useFetch = () => {
+//    const [accomodations, setAccomodations] = useState(null)
 //    const [loading, setLoading] = useState(false)
-//    const [error, setError] = useState(null)
 
 //    useEffect(() => {
 //       setLoading(true)
-//       fetch('/src/data/accomodations.json')
-//          .then((response) => response.json())
-//          .then((data) => setData(data))
-//          .catch((err) => setError(err))
-//          .finally(() => setLoading(false))
+//       fetch(
+//          'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json'
+//       )
+//          .then((res) => res.json())
+//          .then((data) => setAccomodations(data))
+//       setLoading(false)
 //    }, [])
-
-//    return { data, error, loading }
+//    console.log(accomodations)
+//    return { accomodations, loading }
 // }
-// // const getAccomodation = ()=> {
-// //     data.
-// // }
 
-// export default useFetch
-const useGetAccomodation = () => {
-   const idAcc = useParams()
-   let accomodation = ArrayOfAccomodation.find((el) => el.id === idAcc.id)
-   return accomodation
-}
-export default useGetAccomodation
+// const useGetAccomodation = (accomodationId) => {
+//    const [accomodation, setAccomodation] = useState(null)
+//    useEffect(() => {
+//       let accomodationFind = accomodations.find(
+//          (el) => el.id === accomodationId
+//       )
+//       setAccomodation(accomodationFind)
+//    }, [accomodationId])
+//    return { accomodation }
+// }
+
+// export { useGetAccomodation, useFetch }
