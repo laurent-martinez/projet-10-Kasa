@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import useGetAccomodations from '../../data/UseGetAccomodations'
 import './Cards.scss'
-// import accomodations from '../../data/accomodations.json'
+
 const Cards = () => {
    const accomodations = useGetAccomodations()
-   console.log(accomodations)
    return (
       <div className="accomodations">
+         {/* verify if the list of accomodations is here & map through to get the cards & link to accomodation page */}
          {accomodations &&
             accomodations.map((card) => (
                <Link

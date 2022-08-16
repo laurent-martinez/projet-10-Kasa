@@ -1,5 +1,6 @@
 import './Stars.scss'
 
+// function who switch empty or full heart according to int value
 const getStar = (value) => {
    switch (value) {
       case 0:
@@ -10,6 +11,8 @@ const getStar = (value) => {
          return console.log('error no rates')
    }
 }
+
+// function who attribute a list of 5 stars values according to rating
 const getStars = (value) => {
    switch (value) {
       case 0:
@@ -29,6 +32,7 @@ const getStars = (value) => {
    }
 }
 const Stars = ({ accomodation }) => {
+   // change string to int
    let value = parseInt(accomodation.rating)
 
    return (

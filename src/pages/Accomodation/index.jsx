@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom'
 import accomodations from '../../data/accomodations.json'
-// import useGetAccomodation from '../../data/UseGetAccomodation'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Slider from '../../components/Slider'
@@ -10,21 +9,11 @@ import Stars from '../../components/Stars'
 import Host from '../../components/Host'
 import TitleNlocation from '../../components/TitleNlocation'
 import './Accomodation.scss'
-// import useGetAccomodations from '../../data/UseGetAccomodations'
 
 const AccomodationPage = () => {
+   // get the url specific id with useParams hook
    const { id } = useParams()
-   // const accomodations = useGetAccomodations()
-   // console.log('lol', accomodations)
-   // let allId = []
-   // accomodations.map((acc) => allId.push(acc.id))
-   // let urlIsValid = allId.includes(idAcc)
-   // if (urlIsValid) {
-   //    return <Navigate to="/error" />
-   // }
-   // useNavigate
-   // let accomodation = {}
-   // data.map((dt) => (dt.id === idAcc.id ? (accomodation = dt) : undefined))
+   // get the specific accomodation relate to the id
    const accomodation = accomodations.find((el) => el.id === id)
 
    return (
@@ -48,6 +37,7 @@ const AccomodationPage = () => {
                <Collapse size="small" label="description">
                   <p className="collapse-content">{accomodation.description}</p>
                </Collapse>
+               {/* from the specific accomodation loop with a map to get all the quipments & add a key */}
                <Collapse size="small" label="equipments">
                   {accomodation.equipments.map((equipment, index) => (
                      <p className="collapse-content" key={index}>

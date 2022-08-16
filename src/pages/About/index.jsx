@@ -8,8 +8,10 @@ const About = () => {
       <>
          <div className="container">
             <Header />
+            {/* change the src with props in the specific component page */}
             <Banner src="/img/banner2.png" />
             <Collapse label="Fiabilité">
+               {/* content will be use with the children props */}
                <p className="collapse-content">
                   Les annonces postées sur Kasa garantissent une fiabilité
                   totale. Les photos sont conforme au logements, et toutes les
@@ -42,6 +44,7 @@ const About = () => {
                </p>
             </Collapse>
          </div>
+         {/* add specific style for the footer through props  */}
          <Footer position="down" />
       </>
    )

@@ -1,13 +1,13 @@
 import { useParams } from 'react-router-dom'
 import accomodations from '../../data/accomodations.json'
-// import useGetAccomodations from '../../data/UseGetAccomodations'
 import './Host.scss'
 
 const Host = () => {
    const { id } = useParams()
-   // const accomodations = useGetAccomodations()
    let accomodation = accomodations?.find((el) => el.id === id)
+   // split host name with space
    let name = accomodation.host.name.split(' ')
+   // create firstName & family name variable
    let firstName = name[0]
    let familyname = name[1]
    return (

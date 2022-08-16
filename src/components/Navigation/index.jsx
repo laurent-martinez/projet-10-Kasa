@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Navigation.scss'
 
+//  create the navbar using link from react-router
 const Navigation = () => {
    return (
       <nav className="navigation">

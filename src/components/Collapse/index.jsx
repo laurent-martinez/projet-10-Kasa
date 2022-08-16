@@ -6,12 +6,14 @@ const Collapse = ({ children, label, size }) => {
 
    return (
       <div className="details-container">
+         {/* add toggle function on click to change the opening state */}
          <button
             className={`details collapse-${size}`}
             onClick={() => {
                setIsOpen(!isOpen)
             }}
          >
+            {/* change the arrow position according to the opening state */}
             {label}
             {isOpen ? (
                <svg
@@ -42,6 +44,7 @@ const Collapse = ({ children, label, size }) => {
                   />
                </svg>
             )}
+            {/* add content if the the state is open */}
          </button>
          {isOpen && <div className={`content content-${size}`}>{children}</div>}
       </div>

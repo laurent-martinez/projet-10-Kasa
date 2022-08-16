@@ -1,3 +1,5 @@
+// every components import is own style file
+
 import './Banner.scss'
 const Banner = ({ src, children }) => {
    return (
