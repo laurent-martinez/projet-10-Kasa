@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
-import Accomodation from './pages/Accomodation'
+import AccomodationPage from './pages/Accomodation'
 import Error from './pages/Error'
 
 const ReactRouter = () => {
@@ -24,7 +24,7 @@ const ReactRouter = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="accomodation">
-               <Route path=":id" element={<Accomodation />} />
+               <Route path=":id" element={<AccomodationPage />} />
             </Route>
             <Route path="/error" element={<Error />} />
             <Route path="*" element={<Navigate to="/error" replace />} />

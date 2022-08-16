@@ -4,7 +4,7 @@ import Cards from '../../components/Cards'
 import Footer from '../../components/Footer'
 import './Home.scss'
 
-const Home = ({ data }) => {
+const Home = () => {
    // const [data, setData] = useState([])
 
    // useEffect(() => {

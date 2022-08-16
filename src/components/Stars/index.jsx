@@ -3,9 +3,9 @@ import './Stars.scss'
 const getStar = (value) => {
    switch (value) {
       case 0:
-         return '/img/emptyHeart.png'
+         return '/img/emptyheart.svg'
       case 1:
-         return '/img/fullHeart.png'
+         return '/img/fullheart.svg'
       default:
          return console.log('error no rates')
    }
@@ -34,7 +34,12 @@ const Stars = ({ accomodation }) => {
    return (
       <div className="Stars">
          {getStars(value).map((value, index) => (
-            <img src={getStar(value)} alt="full heart" key={index} />
+            <img
+               className="stars_star"
+               src={getStar(value)}
+               alt="full heart"
+               key={index}
+            />
          ))}
       </div>
    )

@@ -31,9 +31,15 @@
 
 .leftArrow {
     left: 10px;
+    &:hover{
+        opacity: 0.8;
+    }
 }
 .rightArrow {
     right: 10px;
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .slider-count {

@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import accomodations from '../../data/accomodations.json'
+// import useGetAccomodation from '../../data/UseGetAccomodation'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Slider from '../../components/Slider'
@@ -9,9 +10,12 @@ import Stars from '../../components/Stars'
 import Host from '../../components/Host'
 import TitleNlocation from '../../components/TitleNlocation'
 import './Accomodation.scss'
+// import useGetAccomodations from '../../data/UseGetAccomodations'
 
-const Accomodation = () => {
-   const idAcc = useParams()
+const AccomodationPage = () => {
+   const { id } = useParams()
+   // const accomodations = useGetAccomodations()
+   // console.log('lol', accomodations)
    // let allId = []
    // accomodations.map((acc) => allId.push(acc.id))
    // let urlIsValid = allId.includes(idAcc)
@@ -21,7 +25,8 @@ const Accomodation = () => {
    // useNavigate
    // let accomodation = {}
    // data.map((dt) => (dt.id === idAcc.id ? (accomodation = dt) : undefined))
-   let accomodation = accomodations.find((el) => el.id === idAcc.id)
+   const accomodation = accomodations.find((el) => el.id === id)
+
    return (
       <>
          <div className="container accomodation">
@@ -57,4 +62,4 @@ const Accomodation = () => {
    )
 }
 
-export default Accomodation
+export default AccomodationPage

@@ -1,7 +1,7 @@
 import './Footer.scss'
-const Footer = ({ position }) => {
+const Footer = () => {
    return (
-      <div className={`footer position-${position}`}>
+      <div className="footer">
          <svg
             width="150"
             height="38"

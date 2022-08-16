@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import useGetAccomodations from '../../data/UseGetAccomodations'
 import './Cards.scss'
-import accomodations from '../../data/accomodations.json'
+// import accomodations from '../../data/accomodations.json'
 const Cards = () => {
+   const accomodations = useGetAccomodations()
+   console.log(accomodations)
    return (
       <div className="accomodations">
          {accomodations &&

@@ -1,12 +1,15 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
+// import useGetAccomodations from '../../data/UseGetAccomodations'
 import accomodations from '../../data/accomodations.json'
 import './Slider.scss'
 
 const Carrousel = () => {
-   const idAcc = useParams()
+   const { id } = useParams()
    const [currentIndex, setCurrentIndex] = useState(0)
-   let accomodation = accomodations.find((el) => el.id === idAcc.id)
+   // const accomodations = useGetAccomodations()
+
+   let accomodation = accomodations.find((el) => el.id === id)
    let images = accomodation.pictures
 
    const previousPicture = () => {

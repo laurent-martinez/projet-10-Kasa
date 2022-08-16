@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 100px 0;
+    margin: 50px 0;
     background-color: #F6F6F6;
     border-radius: 25px;
     padding: 35px 10px;
@@ -18,13 +18,13 @@
     background-color: black;
     align-items: flex-end;
     position: relative;
+    text-decoration: none;
     &_title {
     font-weight: 500;
     font-size: 18px;
     line-height: 25.67px;
     color: #FFFFFF;
     z-index: 15;
-    text-decoration: none;
     margin-left: 10px;
     }
     &_picture {

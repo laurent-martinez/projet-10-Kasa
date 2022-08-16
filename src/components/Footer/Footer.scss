@@ -1,11 +1,10 @@
 .footer {
     background-color: black;
-    margin: 0;
+    margin-top: 110px;
     padding: 0;
     width: 100%;
     height: auto;
     display: flex;
-    z-index: 20;
     bottom: 0;
     left: 0;
     right: 0;
@@ -24,6 +23,6 @@
     }
 }
 
-.position-bottom {
-    position: fixed;
-}
+// .position-bottom {
+//     position: absolute;
+// }

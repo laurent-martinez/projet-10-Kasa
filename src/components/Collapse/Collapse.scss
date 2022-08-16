@@ -36,12 +36,13 @@ cursor: pointer;
     font-size: 18px;
     line-height: 25.67px;
     padding: 0px;
-
+    z-index: 16;
     
 }
 .collapse-content {
     width: 70%;
     padding-left: 15px;
+    margin: 5px 5px 10px 5px;
 }
 
 
@@ -50,4 +51,6 @@ cursor: pointer;
 }
 .content-small {
     width: 582px;
+    height: 80%;
+    padding: 10px 0;
 }
