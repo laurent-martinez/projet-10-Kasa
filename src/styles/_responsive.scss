@@ -13,12 +13,6 @@
     }
 }
 
-
-
-
-
-
-
 @media only screen and (max-width: 768px) {
     .container{
         margin: 50px 20px;
@@ -50,9 +44,13 @@
         flex-direction: column;
     }
     .pageNotFound {
-        &_title {
+        &_container {
+               &_title {
             font-size: 250px;
+            line-height: 350px;
         }
+        }
+     
     }
 }
 
@@ -86,19 +84,46 @@
     }
     .card {
         margin: 20px 0 0 0;
+        height: 310px;
     }
     .accomodations {
         padding: 0;
     }
     .pageNotFound {
-        &_title {
+        &_container {
+             &_title {
             font-size: 150px;
+            line-height: 250px;
+        } 
         }
+      
+    }
+    .slider-container {
+        height: 300px;
+    }
+    .tag {
+        width: 74px;
+        height: 12px;
     }
     .stars {
         &_star {
             width: 20px;
             height: 20px;
         }
+    }
+    .host {
+        &_img {
+            width: 45px;
+            height: 45px;
+        }
+        &_name {
+          &_firstName,&_familyName {
+            font-size: 18px;
+            line-height: 18px;
+          }
+        }
+    }
+    .slider_title {
+        font-size: 30px;
     }
 }

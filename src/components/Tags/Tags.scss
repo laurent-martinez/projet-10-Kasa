@@ -4,14 +4,15 @@
     margin: 0;
 }
 .tag {
-    padding: 15px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 115px;
-    height: 20px;
-    border-radius: 10px;
+    height: 25px;
+    border-radius: 15px;
     margin-right: 10px;
     background-color: #FF6060;
     color: white;
+    white-space: noWrap;
 }

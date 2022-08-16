@@ -42,7 +42,7 @@ const About = () => {
                </p>
             </Collapse>
          </div>
-         <Footer />
+         <Footer position="down" />
       </>
    )
 }

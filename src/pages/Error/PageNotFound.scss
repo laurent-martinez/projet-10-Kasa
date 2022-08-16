@@ -1,9 +1,14 @@
 .pageNotFound {
-    position: absolute;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    margin-top: 300px;
-    &_title {
+    // position: absolute;
+    // left: 50%; 
+    // transform: translate(-50%, -50%); 
+    // margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &_container {
+            &_title {
         font-weight: 700;
         font-size: 288px;
         line-height: 410.69px;
@@ -16,10 +21,12 @@
         font-weight: 500;
         line-height: 51.34px;
         color: #FF6060;
-        margin: 0;
+        margin-bottom: 200px;
         text-align: center;
 
     }
+    }
+
     &_link {
         font-weight: 500;
         font-size: 18px;
