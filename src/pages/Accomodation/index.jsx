@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import accomodations from '../../data/accomodations.json'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -15,6 +15,9 @@ const AccomodationPage = () => {
    const { id } = useParams()
    // get the specific accomodation relate to the id
    const accomodation = accomodations.find((el) => el.id === id)
+   if (!accomodation) {
+      return <Navigate to="/error" />
+   }
 
    return (
       <>
